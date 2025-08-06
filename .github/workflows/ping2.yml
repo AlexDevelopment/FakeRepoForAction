@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Send HTTP request to your server
         run: |
-          curl -X GET https://ovk-api-service.azurewebsites.net/api/check/
+          curl -X GET https://ovk-api-service.azurewebsites.net/api/check?source=github_ping_2
