@@ -1,0 +1,15 @@
+name: Periodic HTTP Request to OVK web app 3rd
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # every 15 minutes
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send HTTP request to your server
+        run: |
+          curl -X GET https://ovk-api-service.azurewebsites.net/api/check?source=github_ping_3
