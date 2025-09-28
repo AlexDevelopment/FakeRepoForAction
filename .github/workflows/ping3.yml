@@ -1,4 +1,4 @@
-name: Periodic HTTP Request to OVK web app 3rd
+name: Periodic HTTP Request to OVK web app 3rd (28.09)
 
 on:
   schedule:
